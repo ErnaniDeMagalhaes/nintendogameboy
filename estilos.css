@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    background: #75bdd1;
+    height: 100vh;
+}
+
+
+.contenedor-gameboy{
+    background: linear-gradient(to bottom, rgb(160, 160, 148) 0%, rgb(204, 204, 190) 14%, rgb(197, 197, 179) 81%, rgb(150, 150, 141) 100%);
+    width: 300px;
+    height: 520px;
+    margin-top: 80px;
+    border-radius: 10px;
+    border-style: groove;
+    border-radius: 10px 10px 60px 10px;
+    box-shadow: 4px 9px 12px 3px rgba(90, 82, 82, 0.82);
+}
+
+.off-on{
+    margin-top: 0;
+    font-size: 8px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    text-transform: uppercase;
+    background: rgb(201, 201, 186);
+    width: 40px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 60px;
+    border-style: groove;
+    color: rgb(158, 153, 158);
+}
+
+
+/*Zona display*/
+
+.zona-gris{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 210px;
+    background: grey;
+    margin: auto;
+    margin-top: 35px;
+    align-items: center;
+    border-radius: 10px 10px 50px 10px;
+    border-style: groove;
+}
+
+.zona-gris  h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 100;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.linea-uno{
+    display: inline-block;
+    background: red;
+    color: transparent;
+    height: 1px;
+    margin-right: 40px;
+   
+}
+
+.linea-dos{
+    display: inline-block;
+    background: blue;
+    color: transparent;
+    height: 1px;
+    margin-left: 10px;
+}
+
+.green-display{
+    display: flex;
+}
+
+.battery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+.battery-point{
+    background: rgb(248, 7, 7);
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    border: 1px solid rgb(167, 6, 6);
+}
+
+.battery h2{
+    font-size: 8px;
+    text-transform: uppercase;
+    color: rgb(231, 231, 218);
+    font: 100;
+    font-weight: 100;
+
+}
+
+.green-screen{
+    width: 160px;
+    height: 160px;
+    background: rgb(1, 141, 1);
+    margin-right: 38px;
+    box-shadow: inset 7px 8px 17px -8px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hello-none{
+    color: transparent;
+}
+
+/*Fin zona display*/
+
+/*Titulo Nintendo Gameboy TM*/
+
+.nintendo-game-boy-tm{
+    display: flex;
+    align-items: center;
+    width: 57%;
+    height: 30px;
+    margin-left: 18px;
+    justify-content: space-evenly;
+    
+    
+}
+
+.nintendo{
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+.gameboy{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    
+    
+}
+
+.tm{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 8px;
+    margin-top: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*Fin zona Titulo*/
+
+/*Zona de controles principales*/
+
+.controles{
+    display: flex;
+    width: 280px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.cross{
+    margin-top: 30px;
+    margin-left:15px;
+    background: linear-gradient(to right, rgb(56, 53, 53) 0%, rgb(56, 53, 53) 0%, rgb(61, 59, 59) 12%, rgb(34, 33, 33) 51%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(44,44,44,1) 96%, rgba(19,19,19,1) 100%);
+    height: 65px;
+    width: 80px;
+    clip-path: polygon(10% 24%, 35% 24%, 35% 0%, 65% 0%, 65% 24%, 90% 24%, 90% 56%, 64% 56%, 64% 83%, 35% 83%, 35% 56%, 10% 56%);
+    border: none;
+}
+
+.botones-a-b{
+    display: flex;
+}
+
+.boton-a, .boton-b{
+    margin-top: 30px;
+    background-color: rgb(146, 5, 5);
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-style: outset;
+    
+}
+
+.boton-b{
+    margin-top: 55px;
+}
+
+.boton-letra-b{
+    margin-top: 82px;
+    margin-right: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform:rotate(-30deg);
+    color: blue;
+    font-size: 14px;
+}
+
+.boton-letra-a{
+    margin-top: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: -2px;
+    transform: rotate(-30deg); 
+    color: blue;
+    font-size: 14px;
+}
+
+/*Fin zona de controles principales*/
+
+/*Controles secundarios*/
+
+.select-start{
+    display: flex;
+    margin:auto;
+    width: 50%;
+    margin-top: 15px;
+    justify-content: center;
+    margin-right: 90px;
+}
+
+.select, .start{
+    width: 40px;
+    height: 11px;
+    background: grey;
+    border-radius: 60px;
+    transform: rotate(-29deg);
+    border-style: groove;
+}
+
+.select{
+    margin-right: 25px;
+}
+
+.text-select-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-29deg);
+    margin: auto;
+    margin-top: 0px;
+    margin-right: 155px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: blue;
+    font-style: unset;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-start{
+    margin-left: 115px;
+}
+
+/*Fin zona de controles secundarios*/
+
+/*Zona "respirador"*/
+
+.respirador{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 70px;
+    border-style: none;
+    margin-left: 230px;
+    margin-bottom: 60px;
+    border-radius: 60px;
+    transform: rotate(60deg);
+    transform: translateY(-40px) rotate(60deg) translateX(-36px);
+    justify-content: space-between;
+}
+
+.ventilador{
+    height: 5px;
+    background: rgb(207, 207, 192);
+    border-radius: 60px;
+    border-style: inset;
+    border-color: rgb(158, 153, 158);
+    
+}
+
+/*End Gameboy*/
+
+/*Animacion para classList*/
+
+@keyframes hello-world{
+
+    0%{
+        color: transparent;
+        bottom: 0;
+    }
+
+    50%{
+        color: #000000;
+        bottom: 30%;
+    }
+
+    100%{
+        color:transparent;
+        bottom: 30%;
+    }
+
+}
+
+.hello{
+    color: transparent;
+    font-size: 19px;
+    font-family: 'Monoton', cursive;
+    position: relative;
+    animation-name: hello-world;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
